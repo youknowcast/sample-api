@@ -1,0 +1,15 @@
+{
+  "name": "sample-api",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "npx redoc-cli serve reference/petstore/openapi.v1.yaml"
+  },
+  "repository": "git@github.com:youknowcast/sample-api.git",
+  "author": "youknowcast <ykc@daycrift.net>",
+  "license": "MIT",
+  "dependencies": {
+    "redoc": "^2.0.0-rc.48",
+    "redoc-cli": "^0.10.2"
+  }
+}
