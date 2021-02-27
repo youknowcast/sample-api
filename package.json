@@ -9,6 +9,7 @@
   "author": "youknowcast <ykc@daycrift.net>",
   "license": "MIT",
   "dependencies": {
+    "moxci": "^0.2.0",
     "redoc": "^2.0.0-rc.48",
     "redoc-cli": "^0.10.2"
   }
