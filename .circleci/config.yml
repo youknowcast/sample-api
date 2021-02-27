@@ -10,7 +10,7 @@ commands:
           destination: redoc-static.html
           path: ./redoc-static.html
       - run:
-          name: "Notify Artifact"
+          name: "Notify Sample API Updated"
           command: yarn moxci
 jobs:
   test:
@@ -18,10 +18,7 @@ jobs:
       - image: circleci/node:10
     steps:
       - setup_and_test
-# Orchestrate or schedule a set of jobs
 workflows:
-  # Name the workflow "welcome"
   welcome:
-    # Run the welcome/run job in its own container
     jobs:
       - test
