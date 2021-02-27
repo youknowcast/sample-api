@@ -13,8 +13,7 @@ commands:
 jobs:
   test:
     docker:
-      - image: circleci/node:8.11.3
-    working_directory: ~/app
+      - image: circleci/node:10
     steps:
       - setup_and_test
 # Orchestrate or schedule a set of jobs
