@@ -10,10 +10,17 @@ commands:
       - run:
           name: "Notify Artifact"
           command: yarn moxci
+jobs:
+  test:
+    docker:
+      - image: circleci/node:8.11.3
+    working_directory: ~/app
+    steps:
+      - setup_and_test
 # Orchestrate or schedule a set of jobs
 workflows:
   # Name the workflow "welcome"
-  default:
+  welcome:
     # Run the welcome/run job in its own container
     jobs:
-      - setup_and_test
+      - test
