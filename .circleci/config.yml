@@ -7,7 +7,7 @@ commands:
       - run: yarn
       - run: yarn build
       - store_artifacts:
-          destination: index.html
+          destination: redoc-static.html
           path: ./redoc-static.html
       - run:
           name: "Notify Artifact"
