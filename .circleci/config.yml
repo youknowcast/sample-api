@@ -13,7 +13,7 @@ commands:
 # Orchestrate or schedule a set of jobs
 workflows:
   # Name the workflow "welcome"
-  welcome:
+  default:
     # Run the welcome/run job in its own container
     jobs:
       - setup_and_test
