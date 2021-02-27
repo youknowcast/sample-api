@@ -5,8 +5,10 @@ commands:
     steps:
       - checkout
       - run: yarn
+      - run: yarn build
       - store_artifacts:
-          path: artifact
+          destination: index.html
+          path: ./redoc-static.html
       - run:
           name: "Notify Artifact"
           command: yarn moxci

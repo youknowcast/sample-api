@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "start": "npx redoc-cli serve reference/petstore/openapi.v1.yaml"
+    "start": "npx redoc-cli serve reference/petstore/openapi.v1.yaml",
+    "build": "npx redoc-cli bundle reference/petstore/openapi.v1.yaml"
   },
   "repository": "git@github.com:youknowcast/sample-api.git",
   "author": "youknowcast <ykc@daycrift.net>",
